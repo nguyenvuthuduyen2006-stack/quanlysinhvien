@@ -3,89 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <title>Thêm sinh viên</title>
-
 <style>
 body{
     font-family: Arial;
 }
-
 table{
     margin: auto;
 }
-
 input{
     width: 250px;
     padding: 6px;
 }
-
 button{
     padding: 8px 15px;
     margin-top: 10px;
 }
-
 h2{
     text-align: center;
 }
-
 .msg{
     text-align: center;
     color: red;
 }
 </style>
-
 </head>
-
 <body>
-
 <h2>THÊM SINH VIÊN</h2>
-
 <div class="msg">
     <?= $thongbao ?>
 </div>
-
 <form action="them.php" method="POST">
-
 <table>
-
 <tr>
     <td>MSV</td>
     <td><input type="text" name="msv"></td>
 </tr>
-
 <tr>
     <td>Họ tên</td>
     <td><input type="text" name="hoten"></td>
 </tr>
-
 <tr>
     <td>PHP</td>
     <td><input type="text" name="php"></td>
 </tr>
-
 <tr>
     <td>MYSQL</td>
     <td><input type="text" name="mysql"></td>
 </tr>
-
 <tr>
     <td>HTML</td>
     <td><input type="text" name="html"></td>
 </tr>
-
 <tr>
     <td></td>
     <td>
         <button type="submit" name="btnThem">Thêm</button>
     </td>
 </tr>
-
 </table>
-
 </form>
-
 <p style="text-align:center;">
     <a href="index.php">Xem danh sách</a>
 </p>
-
 </body>
 </html>
